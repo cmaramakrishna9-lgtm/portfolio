@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ramakrishna Pampana · FP&A Professional · CMA</title>
+<style>
+:root{--bg:#f7f6f2;--card:#fff;--ink:#1d2330;--mute:#6b7280;--line:#e6e3da;--acc:#1f4e5f;--acc2:#b08d57;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 "Inter",system-ui,-apple-system,"Segoe UI",sans-serif}
+h1,h2,h3{font-family:Georgia,"Times New Roman",serif;font-weight:600;line-height:1.15;margin:0}
+a{color:inherit}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;display:flex;justify-content:space-between;align-items:center;padding:12px 5vw;background:rgba(247,246,242,.85);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+nav .links{display:flex;gap:22px;font-size:14px}nav .links a{text-decoration:none;color:var(--mute)}nav .links a:hover{color:var(--ink)}
+.logo{display:flex;align-items:center;gap:10px;font-family:Georgia,serif;font-weight:600}
+section{padding:90px 5vw;max-width:1100px;margin:auto}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;min-height:86vh}
+.tag{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--acc2);font-weight:600}
+h1{font-size:clamp(38px,6vw,64px);margin:14px 0}
+.lead{color:var(--mute);max-width:520px;font-size:18px}
+.btns{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.btn{padding:12px 22px;border-radius:99px;text-decoration:none;font-weight:600;font-size:15px;border:1px solid var(--ink);transition:.25s}
+.btn.p{background:var(--ink);color:#fff}.btn:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(0,0,0,.1)}
+.reel{background:linear-gradient(145deg,#fff,#efede6);border:1px solid var(--line);border-radius:24px;padding:26px;box-shadow:0 30px 60px -30px rgba(31,78,95,.35);position:relative;overflow:hidden}
+.reel:before{content:"";position:absolute;inset:0;background:linear-gradient(115deg,transparent 40%,rgba(255,255,255,.9) 50%,transparent 60%);transform:translateX(-120%);animation:sheen 5s infinite}
+@keyframes sheen{to{transform:translateX(120%)}}
+.reel .top{display:flex;justify-content:space-between;font-size:12px;color:var(--mute);margin-bottom:14px}
+.kpi{display:flex;gap:10px;margin-bottom:16px}.kpi div{flex:1;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px 12px;font-size:11px;color:var(--mute)}
+.kpi b{display:block;font:600 20px Georgia,serif;color:var(--acc)}
+.bars{display:flex;align-items:flex-end;gap:8px;height:130px}
+.bars i{flex:1;background:linear-gradient(var(--acc),#6aa0b0);border-radius:6px 6px 0 0;height:20%;animation:grow 4s ease-in-out infinite}
+.bars i:nth-child(1){--h:45%}.bars i:nth-child(2){--h:62%;animation-delay:.15s}.bars i:nth-child(3){--h:50%;animation-delay:.3s}.bars i:nth-child(4){--h:78%;animation-delay:.45s}.bars i:nth-child(5){--h:68%;animation-delay:.6s}.bars i:nth-child(6){--h:92%;animation-delay:.75s}.bars i:nth-child(7){--h:85%;animation-delay:.9s}
+@keyframes grow{0%,100%{height:15%}40%,80%{height:var(--h)}}
+svg.line{width:100%;height:60px;margin-top:10px}.line path{fill:none;stroke:var(--acc2);stroke-width:2.5;stroke-dasharray:400;stroke-dashoffset:400;animation:draw 4s ease-in-out infinite}
+@keyframes draw{0%{stroke-dashoffset:400}50%,100%{stroke-dashoffset:0}}
+h2{font-size:clamp(28px,4vw,40px);margin:8px 0 34px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px}
+.stat b{font:600 34px Georgia,serif;color:var(--acc);display:block}.stat span{font-size:13px;color:var(--mute)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:24px;transition:.3s}
+.card:hover{transform:translateY(-4px);box-shadow:0 18px 40px -22px rgba(0,0,0,.25)}
+.card h3{font-size:20px;margin-bottom:8px}.card p{margin:0;color:var(--mute);font-size:15px}
+.tl{border-left:2px solid var(--line);margin-left:6px}
+.job{position:relative;padding:0 0 34px 28px}.job:before{content:"";position:absolute;left:-7px;top:6px;width:12px;height:12px;border-radius:50%;background:var(--acc2);box-shadow:0 0 0 4px var(--bg)}
+.job h3{font-size:20px}.job .m{font-size:13px;color:var(--mute);margin:2px 0 8px}.job ul{margin:0;padding-left:18px;color:#3a4150;font-size:15px}.job li{margin-bottom:4px}
+.pills{display:flex;flex-wrap:wrap;gap:10px}.pills span{background:var(--card);border:1px solid var(--line);border-radius:99px;padding:8px 16px;font-size:14px}
+.contact{background:var(--ink);color:#fff;border-radius:28px;text-align:center;padding:60px 5vw;margin:40px 5vw 60px;max-width:none}
+.contact h2{margin-bottom:12px}.contact p{color:#b9bfcc}.contact .btn{border-color:#fff;color:#fff;margin:6px;display:inline-block;max-width:100%;overflow-wrap:anywhere}.contact .rv{display:flex;flex-wrap:wrap;justify-content:center;gap:8px}.contact .btn.p{background:#fff;color:var(--ink)}
+footer{text-align:center;color:var(--mute);font-size:13px;padding-bottom:30px}
+.js .rv{opacity:0;transform:translateY(28px);transition:opacity .8s,transform .8s}.js .rv.in{opacity:1;transform:none}
+@media(max-width:800px){.hero{grid-template-columns:1fr;min-height:auto}.stats{grid-template-columns:1fr 1fr}.grid{grid-template-columns:1fr}nav .links{display:none}section{padding:60px 5vw}.contact .rv{flex-direction:column;align-items:stretch}.contact .btn{margin:0;text-align:center}.contact{margin:30px 4vw 40px}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
+.me{width:108px;height:108px;border-radius:50%;object-fit:cover;object-position:center top;border:3px solid #fff;box-shadow:0 0 0 2px var(--acc2),0 14px 30px -12px rgba(0,0,0,.35);margin-bottom:22px;animation:fl 6s ease-in-out infinite}@keyframes fl{50%{transform:translateY(-6px)}}
+.vid{display:grid;grid-template-columns:auto 1fr;gap:44px;align-items:center}.vid .fr{width:min(300px,100%);aspect-ratio:9/16;border-radius:22px;overflow:hidden;border:1px solid var(--line);box-shadow:0 30px 60px -30px rgba(31,78,95,.45);background:#fff}.vid iframe{width:100%;height:100%;border:0}@media(max-width:800px){.vid{grid-template-columns:1fr;justify-items:center;text-align:center}}
+.poster{display:block;position:relative;width:100%;height:100%;text-decoration:none;color:#fff;background:#1d2330}.poster img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}.poster:after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 45%,rgba(29,35,48,.88));z-index:1}.play{position:absolute;left:50%;top:44%;transform:translate(-50%,-50%);width:68px;height:68px;border-radius:50%;background:rgba(255,255,255,.93);z-index:2;transition:.25s}.play:before{content:"";position:absolute;left:27px;top:20px;border-left:20px solid #1d2330;border-top:14px solid transparent;border-bottom:14px solid transparent}.poster:hover .play{transform:translate(-50%,-50%) scale(1.1)}.poster b{position:absolute;left:0;right:0;bottom:20px;text-align:center;z-index:2;font-size:15px}
+</style><script>document.documentElement.className='js'</script></head><body>
+<nav><a class="logo" href="#top" style="text-decoration:none">
+<svg width="34" height="34" viewBox="0 0 48 48" aria-label="RP logo"><rect x="1" y="1" width="46" height="46" rx="12" fill="#1d2330"/><path d="M14 35V13h9a6 6 0 010 12h-9M23 25l9 10" fill="none" stroke="#f7f6f2" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M27 21l5-5 4 3 5-7" fill="none" stroke="#b08d57" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+<span>Ramakrishna Pampana</span></a>
+<div class="links"><a href="#impact">Impact</a><a href="#expertise">Expertise</a><a href="#experience">Experience</a><a href="#contact">Contact</a></div></nav>
+
+<section class="hero" id="top">
+<div><img class="me" src="data:image/jpeg;base64,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" alt="Ramakrishna Pampana"><div class="tag">FP&amp;A · Business Finance · CMA</div>
+<h1>Turning budgets into decisions leaders can act on.</h1>
+<p class="lead">12 years in finance, 6 in FP&amp;A. I build budgets, rolling forecasts and dashboards that make business performance visible, from ₹50 Cr to ₹408 Cr portfolios. CMA with All India Rank 35 (Final).</p>
+<div class="btns"><a class="btn p" href="#contact">Get in touch</a><a class="btn" href="#experience">See experience</a></div></div>
+<div class="reel" aria-hidden="true"><div class="top"><span>FY Budget vs Forecast</span><span>● live</span></div>
+<div class="kpi"><div><b>₹408 Cr</b>Revenue plan</div><div><b>₹86 Cr</b>EBITDA target</div><div><b>+10–12%</b>Forecast accuracy</div></div>
+<div class="bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+<svg class="line" viewBox="0 0 300 60" preserveAspectRatio="none"><path d="M0 50 C40 45 60 20 100 28 S160 40 200 18 S270 8 300 4"/></svg></div>
+</section>
+
+<section id="intro"><div class="vid"><div class="fr rv"><a class="poster" href="https://www.youtube.com/shorts/8Cc4_HAdMAQ" target="_blank" rel="noopener"><img id="pimg" alt=""><span class="play"></span><b>Watch my intro</b></a></div><div><div class="tag rv">Intro</div><h2 class="rv">Hear it from me</h2><p class="lead rv">A short introduction to my background and the roles I’m looking for.</p><div class="btns rv"><a class="btn" href="https://www.youtube.com/shorts/8Cc4_HAdMAQ" target="_blank" rel="noopener">Watch on YouTube</a></div></div></div></section>
+
+<section id="impact"><div class="tag rv">Impact</div><h2 class="rv">Results from the resume</h2>
+<div class="stats">
+<div class="stat rv"><b data-n="408" data-p="₹" data-s=" Cr">₹408 Cr</b><span>Revenue portfolio budgeted</span></div>
+<div class="stat rv"><b data-n="16" data-s="%">16%</b><span>Fewer reporting errors</span></div>
+<div class="stat rv"><b data-n="20" data-s="%">20%</b><span>Finance process efficiency gain</span></div>
+<div class="stat rv"><b data-n="30" data-p="₹" data-s=" L">₹30 L</b><span>GST refund recovered</span></div></div></section>
+
+<section id="expertise"><div class="tag rv">Expertise</div><h2 class="rv">What I do</h2>
+<div class="grid">
+<div class="card rv"><h3>Budgeting &amp; Forecasting</h3><p>Annual budgets, rolling forecasts and scenario planning tied to business goals.</p></div>
+<div class="card rv"><h3>Variance &amp; P&amp;L Analysis</h3><p>Monthly reviews that explain the why behind numbers and trigger corrective action.</p></div>
+<div class="card rv"><h3>MIS &amp; Dashboards</h3><p>KPI dashboards and management reports in Power BI and SAP BW, delivered on time.</p></div>
+<div class="card rv"><h3>Cash Flow Management</h3><p>Forecasting and payment prioritisation across ₹20 Cr monthly inflows.</p></div>
+<div class="card rv"><h3>Finance Business Partnering</h3><p>Challenging assumptions with sales and operations to protect margins.</p></div>
+<div class="card rv"><h3>Governance &amp; Compliance</h3><p>SOPs, controls, GST, TDS and 25+ overseas filings with zero issues.</p></div></div>
+<div class="pills rv" style="margin-top:28px"><span>SAP</span><span>SAP BW</span><span>Power BI</span><span>Excel</span><span>GST &amp; TDS</span><span>Stakeholder management</span></div></section>
+
+<section id="experience"><div class="tag rv">Experience</div><h2 class="rv">Career timeline</h2>
+<div class="tl">
+<div class="job rv"><h3>Assistant Manager, Finance &amp; Accounts</h3><div class="m">Avirata Defence Systems Ltd · Mar 2025 – May 2026</div><ul><li>Led annual budgeting for a ₹408 Cr revenue portfolio to hit an ₹86 Cr EBITDA target.</li><li>Raised forecast accuracy 10–12% through rolling forecasts and monthly variance reviews.</li><li>Managed ₹20 Cr monthly inflows and ₹17 Cr disbursements via cash flow forecasts.</li></ul></div>
+<div class="job rv"><h3>Finance Manager</h3><div class="m">Healy World Trading India · May 2024 – Jan 2025</div><ul><li>Led ₹50 Cr budgeting and rolling forecasts; cut reporting errors 16% and lifted efficiency 20%.</li><li>Built 2 monthly MIS reports and 6 FP&amp;A dashboards; partnered with global HQ on consolidation.</li></ul></div>
+<div class="job rv"><h3>Finance Manager</h3><div class="m">Armour Display Systems · Jul 2023 – May 2024</div><ul><li>Delivered 100% on-time MIS and KPI dashboards across 10–15 regions.</li><li>Recovered ₹30 Lakh in GST refunds; executed 25+ overseas compliance filings with zero issues.</li><li>Primary payment approver; reviewed payroll and TDS for 120+ employees.</li></ul></div>
+<div class="job rv"><h3>Senior Finance Executive</h3><div class="m">Finaks Advisory Services · May 2022 – Jun 2023</div><ul><li>Built budgets, forecasts and variance analysis for a ₹60 Cr business.</li><li>Managed ₹5 Cr average monthly inflows; ensured 100% on-time vendor payments and shortened the payable cycle by a week.</li></ul></div>
+<div class="job rv"><h3>Financial Analyst</h3><div class="m">HP Computing and Printing Systems India · Sep 2021 – Feb 2022</div><ul><li>Reconciled ₹5+ Cr of prepaid expenses and cut reconciliation exceptions 15%.</li></ul></div>
+<div class="job rv"><h3>Team Lead</h3><div class="m">Capgemini Technology Services · Mar 2019 – Jul 2021</div><ul><li>Cut month-end close time 18% and report generation time 25% using SAP BW.</li><li>Standardised intercompany reconciliations across 2 entities.</li></ul></div>
+<div class="job rv"><h3>Accounts Manager</h3><div class="m">Saranakantha B &amp; Co, Chartered Accountants · Jun 2014 – Feb 2019</div><ul><li>Ran end-to-end accounting for 5+ clients with ₹28+ Cr combined annual revenue.</li></ul></div></div>
+<h3 class="rv" style="margin:30px 0 8px">Credentials</h3>
+<p class="rv" style="color:var(--mute);margin:0">CMA, The Institute of Cost Accountants of India · All India Rank 35 (Final), 47 (Inter) · CA-IPCC, ICAI · B.B.M., Gulbarga University</p></section>
+
+<section class="contact" id="contact"><h2 class="rv">Let’s talk</h2><p class="rv">Open to FP&amp;A and finance business partnering roles in Bengaluru, Hyderabad and remote.</p>
+<div class="rv"><a class="btn p" href="mailto:cma.ramakrishna9@gmail.com">cma.ramakrishna9@gmail.com</a><a class="btn" href="tel:+919035121904">+91 90351 21904</a><a class="btn" href="https://linkedin.com/in/ramakrishna-finance-accounts" target="_blank" rel="noopener">LinkedIn</a></div></section>
+<footer>© Ramakrishna Pampana · Bengaluru · Open to Hyderabad &amp; remote</footer>
+<script>
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;e.target.classList.add('in');const n=e.target.querySelector('[data-n]');if(n&&!n.done){n.done=1;const t=+n.dataset.n,p=n.dataset.p||'',s=n.dataset.s||'';let s0=null;const f=ts=>{s0=s0||ts;const k=Math.min((ts-s0)/1200,1);n.textContent=p+Math.round(t*(1-Math.pow(1-k,3)))+s;if(k<1)requestAnimationFrame(f)};requestAnimationFrame(f)}io.unobserve(e.target)}),{threshold:.15});
+const all=[...document.querySelectorAll('.rv')];all.forEach((el,i)=>{el.style.transitionDelay=(i%4)*70+'ms';io.observe(el)});
+const show=el=>{el.classList.add('in');const n=el.querySelector('[data-n]');if(n&&!n.done){n.done=1;n.textContent=(n.dataset.p||'')+n.dataset.n+(n.dataset.s||'')}};
+const chk=()=>all.forEach(el=>{if(!el.classList.contains('in')&&el.getBoundingClientRect().top<innerHeight*.95)show(el)});
+addEventListener('scroll',chk,{passive:true});addEventListener('resize',chk);const pi=document.getElementById('pimg'),me=document.querySelector('.me');if(pi&&me)pi.src=me.src;setTimeout(chk,1200);setTimeout(()=>all.forEach(show),4000);
+</script></body></html>
